@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Air Lite</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -16,28 +17,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-        <style>
-            footer {
-                background:black;
-                color: white;
-                padding: 40px;
-                min-height: 100px;
-                max-height: 300px;
-            }
-            .left {
-                float: left;
-                text-align: center;
-                width: 33.3%
-            }
-        </style>
+    <style>
+        footer {
+            background: #303f9f;
+            color: white;
+            padding: 40px;
+            min-height: 150px;
+            max-height: 300px;
+        }
+
+        .left {
+            float: left;
+            text-align: center;
+            width: 33.3%
+        }
+
+        body {
+            background-color: black;
+        }
+        #index_main_text {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand">Air Lite</a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Nosotros</a>
+                    <a class="nav-link" href="http://192.168.1.146:5500/Solemne_1/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -45,8 +55,8 @@
                         Internet
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="https://apple.com">Hogar</a>
-                        <a class="dropdown-item" href="https://microsoft.com">Movil</a>
+                        <a class="dropdown-item" href="http://192.168.1.146:5500/Solemne_1/hogar.html">Hogar</a>
+                        <a class="dropdown-item" href="http://192.168.1.146:5500/Solemne_1/movil.html">Movil</a>
 
                     </div>
                 </li>
@@ -65,23 +75,23 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://cdn.pixabay.com/photo/2018/07/16/16/55/banner-3542404_960_720.jpg"
-                    class="d-block w-100" title="Apple" alt="Monitor2" height="400">
+                    class="d-block w-100" title="Banner1" alt="Banner1" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://i.pinimg.com/736x/9b/43/a5/9b43a523cd7cb179c2ac864a73d1dedb.jpg" class="d-block w-100"
-                    title="Apple" alt="Monitor2" height="400">
+                    title="Banner2" alt="Banner2" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://static.vecteezy.com/system/resources/previews/002/004/521/non_2x/gray-cement-wall-and-studio-room-background-banner-photo.jpg"" 
-                class=" d-block w-100" title="Apple" alt="Monitor2" height="400">
+                class=" d-block w-100" title="Banner3" alt="Banner3" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://static.vecteezy.com/system/resources/previews/000/694/591/non_2x/luxury-shiny-golden-glitters-banner-background-vector.jpg"
-                    class="d-block w-100" title="Apple" alt="Monitor2" height="400">
+                    class="d-block w-100" title="Banner4" alt="Banner4" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://mecatronicauno.com/wp-content/uploads/2018/10/fondo-banner.jpg" class="d-block w-100"
-                    title="Apple" alt="Monitor2" height="400">
+                    title="Banner5" alt="Banner5" height="400">
             </div>
         </div>
     </div>
@@ -93,56 +103,81 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
-<div class="container mt-4">
-    <div>
-        <h1>Telefonía movil</h1>
+    <hr>
     </div>
-</div>
-<div class="card mb-3">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+    <div class="p-3 mb-2 bg-light text-dark">
+        <div id="index_main_text">
+            <h1>Aprovecha nuestras mejores ofertas en planes que tenemos para ti!</h1>
+        </div>
     </div>
-  </div>
-</div>
-<div class="container mt-4">
-    <div>
-        <h1>Plan Hogar</h1>
+        <div class="container mt-5">
+            <div class="p-3 mb-2 bg-warning text-dark">
+                <h1>Plan Movil</h1>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="card mb-3">
+                <img src="/imgs/wallpaper_movil.jpg" class="card-img-top" alt="Mujer_naturaleza" height="300px">
+                <div class="card-body">
+                    <p><h3 class="card-title">75 GIGAS </h3><h5 class="text-muted">Los clientes podrán adquirir bolsas adicionales. Las bolsas se adquieren contra 
+                        factura para los Planes Libres y contra saldo para Planes Control.</h5></p>
+                    <h3 class="card-text">$ 19.990
+                    </h3>
+                    <div class="card text-right" style="width: 18rem;"><a href="#" class="btn btn-warning">Lo Quiero</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="p-3 mb-2 bg-warning text-dark">
+                <h1>Plan Hogar</h1>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="card mb-3">
+                <img src="/imgs/wallpaper_hogar.jpg" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                    <p><h3 class="card-title">150 GIGAS </h3><h5 class="text-muted">Suma un plan multimedia y
+                        lleva tu Internet Móvil Hogar por tan solo</h5></p>
+                    <h3 class="card-text">$ 14.990
+                    </h3>
+                    <div class="card text-right" style="width: 18rem;"><a href="#" class="btn btn-warning">Lo Quiero</a></div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="card mb-3">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-  <footer>
+
     <footer>
         <section class="contenido">
             <section class="left">
-                <img src="data:image/png;base64,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"
-                    alt="Telefono" height="40">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="52"
+                    height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                </svg>
                 <p>Contáctanos +569 91373749</p>
             </section>
             <section class="left">
-                <img src="data:image/png;base64,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"
-                    alt="Desarrollo" height="40">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="52"
+                    height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="9 11 12 14 20 6" />
+                    <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                </svg>
                 <p>Desarrollado por JAL</p>
             </section>
             <section class="left">
-                <a href="https://instagram.com"><img
+                <a href="https://www.instagram.com"><img class="instagram"
                         src="https://i.pinimg.com/originals/3b/21/c7/3b21c7efd2ba9c119fb8d361acacc31d.png" alt=" "
-                        height="40" width=""></a></a>
-                    <p>Síguenos en nuestras redes sociales</p>
+                        height="50" width=""></a></a>
+                <p>Siguenos en nuestras Redes Sociales</p>
             </section>
-        </section>
     </footer>
-</footer>
+    </div>
 </body>
+
 </html>
