@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Lite</title>
+    <link rel="stylesheet" href="estilos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -17,34 +18,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-    <style>
-        footer {
-            background: #303f9f;
-            color: white;
-            padding: 60px;
-            min-height: 200px;
-            max-height: 300px;
-        }
 
-        .left {
-            float: left;
-            text-align: center;
-            width: 33.3%
+    <style>
+        nav {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 140%;
         }
 
         body {
-            background-color: black;
+            background-color: lightslategray;
         }
+
+        
 
         #index_main_text {
             text-align: center;
+
         }
     </style>
+
 </head>
+
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand">Air Lite</a>
+        <a class="navbar-brand" href="#">Air Lite</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +50,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://192.168.1.146:5500/Solemne_1/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -60,8 +58,8 @@
                         Internet
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="http://192.168.1.146:5500/Solemne_1/hogar.html">Hogar</a>
-                        <a class="dropdown-item" href="http://192.168.1.146:5500/Solemne_1/movil.html">Movil</a>
+                        <a class="dropdown-item" href="hogar.html">Hogar</a>
+                        <a class="dropdown-item" href="movil.html">Movil</a>
 
                     </div>
                 </li>
@@ -69,6 +67,7 @@
         </div>
     </nav>
 
+    <!--Carrusel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -79,51 +78,54 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://cdn.pixabay.com/photo/2018/07/16/16/55/banner-3542404_960_720.jpg"
-                    class="d-block w-100" title="Banner1" alt="Banner1" height="400">
+                <img src="https://cdn.crello.com/downloads/e75eae20-543e-42da-b155-3a0935be4790_640.jpeg"
+                    class="d-block w-100" title="Foto1" alt="Monitor2" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://i.pinimg.com/736x/9b/43/a5/9b43a523cd7cb179c2ac864a73d1dedb.jpg" class="d-block w-100"
-                    title="Banner2" alt="Banner2" height="400">
+                    title="Apple" alt="Foto2" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://static.vecteezy.com/system/resources/previews/002/004/521/non_2x/gray-cement-wall-and-studio-room-background-banner-photo.jpg"" 
-                class=" d-block w-100" title="Banner3" alt="Banner3" height="400">
+                class=" d-block w-100" title="Foto3" alt="Monitor2" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://static.vecteezy.com/system/resources/previews/000/694/591/non_2x/luxury-shiny-golden-glitters-banner-background-vector.jpg"
-                    class="d-block w-100" title="Banner4" alt="Banner4" height="400">
+                    class="d-block w-100" title="Foto4" alt="Monitor2" height="400">
             </div>
             <div class="carousel-item">
                 <img src="https://mecatronicauno.com/wp-content/uploads/2018/10/fondo-banner.jpg" class="d-block w-100"
-                    title="Banner5" alt="Banner5" height="400">
+                    title="Apple" alt="Foto5" height="400">
             </div>
         </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    <hr>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
     </div>
 
+    <!--CONTENEDORES INDEX-->
     <div class="p-3 mb-2 bg-light text-dark">
         <div id="index_main_text">
             <h1>Aprovecha nuestras mejores ofertas en planes que tenemos para ti!</h1>
         </div>
     </div>
+
+    <!--Contenedor 1-->
     <div class="container mt-5">
         <div class="p-3 mb-2 bg-warning text-dark">
-            <h1>Plan Movil</h1>
+            <h1>Planes Movil</h1>
         </div>
     </div>
     <div class="container mt-4">
         <div class="card mb-3">
-            <img src="/imgs/wallpaper_movil.jpg" class="card-img-top" alt="Mujer_naturaleza" height="300px">
+            <a href="movil.html"><img
+                    src="https://cdn.crello.com/downloads/d5577270-32dd-4b71-bad8-69ffe726a62e_640.jpeg"
+                    class="card-img-top" alt="Mujer_naturaleza" height="300px"></a>
             <div class="card-body">
                 <p>
                 <h3 class="card-title">75 GIGAS </h3>
@@ -132,33 +134,39 @@
                 </p>
                 <h3 class="card-text">$ 19.990
                 </h3>
-                <div class="card text-right" style="width: 18rem;"><a href="#" class="btn btn-warning">Lo Quiero</a>
+                <div class="card text-right" style="width: 18rem;"><a href="movil.html" class="btn btn-warning">
+                        <strong>Lo Quiero!</strong></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Contenedor 2-->
     <div class="container mt-5">
         <div class="p-3 mb-2 bg-warning text-dark">
-            <h1>Plan Hogar</h1>
+            <h1>Planes Hogar</h1>
         </div>
     </div>
     <div class="container mt-4">
         <div class="card mb-3">
-            <img src="/imgs/wallpaper_hogar.jpg" class="card-img-top" alt="..." height="300px">
+            <a href="hogar.html"><img
+                    src="https://cdn.crello.com/downloads/204f0734-7a66-4a38-9f21-daeb5ae460e6_640.jpeg"
+                    class="card-img-top" alt="..." height="300px"></a>
             <div class="card-body">
                 <p>
                 <h3 class="card-title">150 GIGAS </h3>
                 <h5 class="text-muted">Suma un plan multimedia y
-                    lleva tu Internet Móvil Hogar por tan solo</h5>
+                    lleva tu Internet Móvil Hogar por tan solo:</h5>
                 </p>
                 <h3 class="card-text">$ 14.990
                 </h3>
-                <div class="card text-right" style="width: 18rem;"><a href="#" class="btn btn-warning">Lo Quiero</a>
+                <div class="card text-right" style="width: 18rem;"><a href="hogar.html"
+                        class="btn btn-warning"><strong>Lo Quiero!</strong></a>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
 
     <footer>
         <section class="contenido">
@@ -190,7 +198,7 @@
                 <p>Siguenos en nuestras Redes Sociales</p>
             </section>
     </footer>
-    </div>
+
 </body>
 
 </html>
